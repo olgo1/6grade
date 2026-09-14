@@ -1,0 +1,68 @@
+\begin{center}
+    {\large\bfseries 1. Действия с натуральными числами}
+\end{center}
+
+\small
+\begin{enumerate}[itemsep=0.8em]
+
+\item \textbf{Змейка}
+
+\begin{center}
+\begin{tikzpicture}[
+    >=stealth,
+    every node/.style={font=\small},
+    result/.style={draw,circle,minimum size=8mm,inner sep=0pt},
+    action/.style={fill=white,inner sep=1.5pt}
+]
+    \node[result] (n0) at (0,0) {18};
+    \node[result] (n1) at (2.05,0) {\phantom{00}};
+    \node[result] (n2) at (4.10,0) {\phantom{00}};
+    \node[result] (n3) at (6.15,0) {\phantom{00}};
+    \node[result] (n4) at (8.20,0) {\phantom{00}};
+
+    \node[result] (n5) at (8.20,-1.45) {\phantom{00}};
+    \node[result] (n6) at (6.15,-1.45) {\phantom{00}};
+    \node[result] (n7) at (4.10,-1.45) {\phantom{00}};
+    \node[result] (n8) at (2.05,-1.45) {?};
+
+    \draw[->] (n0) -- node[action,above] {$\cdot 6$} (n1);
+    \draw[->] (n1) -- node[action,above] {$+36$} (n2);
+    \draw[->] (n2) -- node[action,above] {$:8$} (n3);
+    \draw[->] (n3) -- node[action,above] {$+27$} (n4);
+    \draw[->] (n4) -- node[action,right] {$\cdot 4$} (n5);
+    \draw[->] (n5) -- node[action,above] {$:9$} (n6);
+    \draw[->] (n6) -- node[action,above] {$-7$} (n7);
+    \draw[->] (n7) -- node[action,above] {$\cdot 5$} (n8);
+\end{tikzpicture}
+\end{center}
+
+\item \textbf{Вычислите:}\par\vspace{0.1cm}
+
+а) $(17345 + 12655) \cdot 48$\par\vspace{0.1cm}
+
+б) $8750 \cdot 72 : 45$\par
+
+\item Шестиклассникам на дом задали 4 примера. Вася не был на уроке, поэтому он взял у Маши сами примеры, а ответы ему продиктовал Петя. Вот только Маша и Петя записали примеры в разном порядке. Но Вася догадался, как сопоставить примеры и ответы, при этом ничего не считая. Догадайтесь и вы!
+
+\noindent
+\begin{minipage}[t]{0.47\linewidth}
+\textbf{Примеры:}
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+\item[А)] $7284936 : 3$
+\item[Б)] $4125 \cdot 300$
+\item[В)] $86475 + 34829$
+\item[Г)] $64 \cdot 19375$
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\textbf{Ответы:}
+\begin{itemize}[leftmargin=*,itemsep=0.25em]
+\item[1)] $1240000$
+\item[2)] $121304$
+\item[3)] $2428312$
+\item[4)] $1237500$
+\end{itemize}
+\end{minipage}
+
+\end{enumerate}
